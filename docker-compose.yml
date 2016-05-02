@@ -1,0 +1,12 @@
+etherpad:
+    image: qnib/etherpad
+    hostname: etherpad
+    container_name: etherpad
+    ports:
+      - 9001:9001
+    environment:
+     - ETHERPAD_ADMIN_PASSWD=admin
+     - ETHERPAD_USER01_NAME=user1
+     - ETHERPAD_USER01_PASSWD=user1
+     - ETHERPAD_USER02_NAME=user2
+     - ETHERPAD_USER02_PASSWD=user2
